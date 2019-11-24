@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageView" customModule="NearbyVenues" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="82F-G7-PqB" id="yqs-cS-hj3"/>
+                <outlet property="contentView" destination="I6x-wh-oEg" id="5fb-b3-zfY"/>
+                <outlet property="descriptionLabel" destination="bxp-7l-fu5" id="bnJ-uy-1YK"/>
+                <outlet property="titleLabel" destination="r3f-fS-t9E" id="oIa-F4-a9m"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="I6x-wh-oEg">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No results found" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3f-fS-t9E">
+                    <rect key="frame" x="119.5" y="391" width="175" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try rewording your search or entering new keyword" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxp-7l-fu5">
+                    <rect key="frame" x="61.5" y="427.5" width="291.5" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82F-G7-PqB">
+                    <rect key="frame" x="184" y="484.5" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="didTapActionButton" destination="-1" eventType="touchUpInside" id="IM9-QA-B6j"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="bxp-7l-fu5" firstAttribute="top" secondItem="r3f-fS-t9E" secondAttribute="bottom" constant="7.5" id="4pe-W1-hwS"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bxp-7l-fu5" secondAttribute="trailing" constant="32" id="5hh-iG-qbS"/>
+                <constraint firstItem="bxp-7l-fu5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="I6x-wh-oEg" secondAttribute="leading" constant="32" id="97J-fA-8EP"/>
+                <constraint firstItem="82F-G7-PqB" firstAttribute="top" secondItem="bxp-7l-fu5" secondAttribute="bottom" constant="16" id="MbQ-go-e4L"/>
+                <constraint firstItem="bxp-7l-fu5" firstAttribute="centerX" secondItem="I6x-wh-oEg" secondAttribute="centerX" id="Mqu-bl-Gn1"/>
+                <constraint firstItem="r3f-fS-t9E" firstAttribute="centerX" secondItem="I6x-wh-oEg" secondAttribute="centerX" id="OiI-NG-1pQ"/>
+                <constraint firstItem="bxp-7l-fu5" firstAttribute="centerY" secondItem="I6x-wh-oEg" secondAttribute="centerY" id="oTj-jL-FkL"/>
+                <constraint firstItem="82F-G7-PqB" firstAttribute="centerX" secondItem="I6x-wh-oEg" secondAttribute="centerX" id="pJy-UQ-AVe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="AcG-zQ-JZT"/>
+            <point key="canvasLocation" x="623" y="-490"/>
+        </view>
+    </objects>
+</document>
